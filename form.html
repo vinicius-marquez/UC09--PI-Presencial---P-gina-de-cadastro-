@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js"></script>
+    <link href="./css/estilo.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="contForm">
+    <form onsubmit="return cadastrar();">
+        <ul class="contFlex">
+            <li>
+                <label>Nome</label><input type="text" id="fNom" placeholder="Informe o nome" required/>
+            </li>
+            <li>
+                <label>CPF</label><input type="text" id="fCpf" placeholder="Informe o CPF"
+                                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"/>
+            </li>
+            <li>                    
+                <label>Telefone</label><input type="text" id="fTel" placeholder="Informe o telefone"
+                                pattern="\d{2}\s\d{8}"/>
+            </li>
+            <li>
+            <label>Celular</label><input type="text" id="fCel" placeholder="Informe o celular"
+                                pattern="\d{2}\s\d{9}"/>
+            </li>
+            <li>
+                <label>CEP</label><input type="text" id="fCep" placeholder="Informe o CEP"
+                                onblur="pesquisacep(this.value);" pattern="\d{8}"/>
+            </li>
+            <li>
+                <label>Logradouro</label><input type="text" id="fLog" placeholder="Informe o logradouro" disabled/>
+            </li>
+            <li>
+                <label>Número</label><input type="text" id="fNum" placeholder="Informe o número"/>
+            </li>
+            <li>
+                <label>Complemento</label><input type="text" id="fCom" placeholder="Informe o complemento"/>
+            </li>
+            <li>
+                <label>Bairro</label><input type="text" id="fBai" placeholder="Informe o bairro" disabled/>
+            </li>
+            <li>
+                <label>Cidade</label><input type="text" id="fCid" placeholder="Informe a cidade" disabled/>
+            </li>
+            <li>
+                <label>Estado</label><input type="text" id="fEst" placeholder="Informe o estado" disabled/>
+            </li>
+            <li>
+                <button>Cadastrar</button>
+            </li>
+        </ul>
+    </form>
+    </div>
+</body>
+</html>

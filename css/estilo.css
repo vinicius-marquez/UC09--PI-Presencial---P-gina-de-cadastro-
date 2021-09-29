@@ -1,0 +1,19 @@
+
+.contForm {
+    width: 80%;
+    max-width: 120px;
+}
+
+.contFlex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 1 auto;
+    padding: 8px;
+}
+
+body {
+    background: #3AAFAB;
+}
